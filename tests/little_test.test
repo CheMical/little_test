@@ -1,6 +1,6 @@
 <?php
 
-class LittleUnitTestCase extends SimpleTestUnitTestCase {
+class LittleUnitTestCase extends DrupalUnitTestCase {
   public static function getInfo() {
     return array(
       'name' => 'Little Unit Test',
@@ -14,7 +14,7 @@ class LittleUnitTestCase extends SimpleTestUnitTestCase {
   }
 }
 
-class LittleUnitWebCase extends SimpleTestWebTestCase {
+class LittleUnitWebCase extends DrupalWebTestCase {
   public static function getInfo() {
     return array(
       'name' => 'Little Web Test',
