@@ -9,7 +9,7 @@ class LittleUnitTestCase extends SimpleTestUnitTestCase {
     );
   }
 
-  public testLittleTest() {
+  public function testLittleTest() {
     $this->assertNull(NULL, 'This must be NULL.');
   }
 }
@@ -27,7 +27,7 @@ class LittleUnitWebCase extends SimpleTestWebTestCase {
     parent::setUp();
   }
 
-  public testLittleTest() {
+  public function testLittleTest() {
     $this->assertTrue(TRUE, 'This is TRUE');
   }
 }
