@@ -1,0 +1,33 @@
+<?php
+
+class LittleUnitTestCase extends SimpleTestUnitTestCase {
+  public static function getInfo() {
+    return array(
+      'name' => 'Little Unit Test',
+      'description' => 'Test for the testing.',
+      'group' => 'LittleTest',
+    );
+  }
+
+  public testLittleTest() {
+    $this->assertNull(NULL, 'This must be NULL.');
+  }
+}
+
+class LittleUnitWebCase extends SimpleTestWebTestCase {
+  public static function getInfo() {
+    return array(
+      'name' => 'Little Web Test',
+      'description' => 'Test for the testing.',
+      'group' => 'LittleTest',
+    );
+  }
+
+  protected function setUp() {
+    parent::setUp();
+  }
+
+  public testLittleTest() {
+    $this->assertTrue(TRUE, 'This is TRUE');
+  }
+}
