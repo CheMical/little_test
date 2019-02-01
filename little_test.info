@@ -2,4 +2,5 @@ name = Little test
 description = Module to experiment with tests
 package = Little
 core = 7.x
+files[] = tests/little_test.test
 hidden = TRUE
